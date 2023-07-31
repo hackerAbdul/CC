@@ -1,0 +1,14 @@
+.container{
+    width: 25%;
+    margin:auto;
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
