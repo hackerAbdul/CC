@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- title of the tab -->
         <title>Cookie Clicker</title>
+
+        <!-- connecting the css styling page here -->
         <link href="cookie.css" rel="stylesheet">
     </head>
 
     <body>
+        <!-- container that holds the image of the cookie and the number counter -->
         <div class="container">
             <h1>Cookie Clicker</h1>
             <h1 id="counter"></h1>
-            <img id="img" src="https://www.transparentpng.com/thumb/cookie/bake-biscuit-chip-chocolate-cookie-images--18.png">
+            <!-- reference image saved in the current folder -->
+            <img id="img" src="cookie.png">
             <button hidden>Restart</button>
             <button id="button" hidden>2x</button>
         </div>
+
+        <!-- button that changes the theme of the website -->
         <button id="theme"><i class="fa fa-regular fa-moon"></i></button>
+
+        <!-- connecting javascript page through script tag -->
         <script src="cookie.js"></script>
     </body>
 </html>

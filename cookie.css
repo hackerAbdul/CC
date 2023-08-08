@@ -1,5 +1,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
+/* this will set the background colour of the whole site */
+body{
+    background-color: rgba(253, 138, 84, 0.774);
+}
+
+/* this portion will make changes to everything inside the container class */
 .container{
     width: 25%;
     margin:auto;
@@ -9,6 +15,7 @@
     text-align: center;
 }
 
+/* all the necessary changes to image */
 img{
     width: 90%;
     border-top-left-radius: 8px;
@@ -19,6 +26,7 @@ img{
     transition: 0.2s;
 }
 
+/* once the cursor hovers over the image make some animation changes */
 img:hover{
     width: 100%;
     opacity: 1;
@@ -29,10 +37,7 @@ h1{
     background: rgba(0,0,0,0.2);
 }
 
-body{
-    background-color: rgba(253, 138, 84, 0.774);
-}
-
+/* once the changing theme button is pressed this class added to the body and activated, it will change the background colour for the site */
 .darkmode{
     background-color: rgb(65, 65, 65);
 }
