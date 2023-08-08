@@ -3,6 +3,7 @@ const body = document.body
 const counter = document.getElementById("counter")
 const btn = document.querySelector('button')
 const btn2 = document.getElementById('button')
+const theme = document.getElementById('theme')
 let num = 0
 counter.innerText = num + " Cookies"
 
@@ -27,4 +28,8 @@ btn.addEventListener("click", function(e){
 btn2.addEventListener("click", function(e){
     num *=2
     counter.innerText = `${num} Cookies`
+})
+
+theme.addEventListener("click", function(e){
+    body.classList.toggle("darkmode")
 })
