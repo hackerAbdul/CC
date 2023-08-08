@@ -4,6 +4,7 @@ const counter = document.getElementById("counter")
 const btn = document.querySelector('button')
 const btn2 = document.getElementById('button')
 const theme = document.getElementById('theme')
+const icon = document.querySelector('i')
 let num = 0
 counter.innerText = num + " Cookies"
 
@@ -11,9 +12,8 @@ img.addEventListener("click", function(e){
     num++
     counter.innerText = `${num} Cookies`
 
-    if (num>5 && num<25){
+    if (num>5){
         btn.removeAttribute("hidden")
-    }else if(num>20){
         btn2.removeAttribute("hidden")
     }
 })
@@ -32,4 +32,9 @@ btn2.addEventListener("click", function(e){
 
 theme.addEventListener("click", function(e){
     body.classList.toggle("darkmode")
+    if (icon.classList.contains("fa-regular")){
+        icon.classList.remove("fa-regular")
+    }else{
+        icon.classList.add("fa-regular")
+    }
 })
